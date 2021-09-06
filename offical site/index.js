@@ -57,3 +57,35 @@ function findCharacter(){
     
     }
 }
+
+const character = [{name:'IRON MAN' ,
+                    realName:'Anthony Edward “Tony” Stark', 
+                    birth:'29/5/1970',
+                    abilities:'Thông minh, chiến lược gia tài giỏi, doanh nhân thành đạt, kỹ năng cận chiến và sử dụng các bộ giáp làm công cụ chiến đấu',
+                    quote:`“United? Unity isn’t about being the same. It’s about working together. What you can’t calculate, Ultron, is that our differences are our greatest strength.”`,
+                    link:`https://hosonhanvat.vn/ho-so-nhan-vat-iron-man-la-ai`},
+
+                   {name:'CAPTAIN AMERICA',
+                    realName:`Steve Rogers `,
+                    birth:'4/7/1918',
+                    abilities:`Siêu tốc độ, siêu trâu bò, siêu phản xạ, siêu giác quan,kỹ năng cận chiến cao`,
+                    quote:`“I’m not looking for forgiveness, and I’m way past asking permission. Earth just lost her best defender, so we’re here to fight. And if you want to stand in our way, we’ll fight you too.”`,
+                    link:`https://hosonhanvat.vn/ho-so-nhan-vat-captain-america-steve-rogers`}]
+
+let searchInfo = document.querySelectorAll('.list-hero div');
+console.log(searchInfo);                    
+searchInfo.forEach((element) => {
+    element.addEventListener("click", hideInfo)
+    function hideInfo(){
+    for( let i = 0; i<character.length; i++){
+        if(this.querySelector('p').innerText == character[i].name){
+            document.querySelector('.info-hero h2').innerText = character[i].name;
+            document.querySelector('.information blockquote i').innerText = character[i].quote;
+            document.querySelector('.realName').innerText = character[i].realName;
+            document.querySelector('.Birth').innerText = character[i].birth;
+            document.querySelector('.Abilities').innerText = character[i].abilities;
+            document.querySelector('.information a').href= character[i].link;
+        }
+    }
+    }
+});

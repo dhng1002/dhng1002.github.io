@@ -11,16 +11,17 @@
 }
 .listHero .row > div:last-child{
     background-color:#202020;
-    height:100vh;
+    height:528px;
 }
 .search-bar{
     width:100%;
     display:flex;
     background-color:#e62429;
-    height:10vh;
+    height:65px;
     align-items: center;
     justify-content: center;
     position:relative;
+    margin-bottom: 13px;
 }
 
 .searchHero{
@@ -42,20 +43,23 @@
     flex-wrap: wrap;
     overflow-y: scroll;
     background-color: white;
-    height:80vh;
-    margin-top: 5vh;
-    
+    height:450px;
+    padding-top: 5vh;
+    border-bottom:2px solid black;
 }
 .list-hero::-webkit-scrollbar,  .list-villain::-webkit-scrollbar{
-    width: 14px;
-    position:relative;
+    width: 8px;
+    
 }
 
 .list-hero::-webkit-scrollbar-track, .list-villain::-webkit-scrollbar-track{
-    background:#e62429;
+    width: 6px;
+    background-color: gray;
+    border: 3px solid white;
 }
 .list-hero::-webkit-scrollbar-thumb, .list-villain::-webkit-scrollbar-thumb{
-    background-color: black;
+    background-color:#e62429;
+    border:1px solid white;
 }
 .list-hero > div, .list-villain > div{
     width:10vw;
@@ -78,6 +82,44 @@
     width:100%;
     border-bottom: 4px solid #e62429 ;
 }
+.info-hero{
+    padding-left: 10%;
+    padding-right: 10%;
+    height:100%;
+}
+.info-hero h1{
+    color:#e62429;
+    font-size: 1.4em;
+}
+.info-hero h2{
+    color: white;
+    text-align: center;
+}
+.information{
+    width:100%;
+    color:white;
+}
+.information blockquote{
+    text-align: center;
+    font-size: 2vw;
+}
+.information td{
+    font-size: 1.8vw;
+}
+.information a{
+    margin-top: 2vh;
+    display:block;
+    color:white;
+    font-size: 1em;
+}
+.information td:first-child{
+    width:30%;
+    vertical-align: top;
+}
+.information td:last-child{
+    width:70%;
+}
+
 
 @media only screen and (min-width: 50em) and (max-width: 64em){
     .list-hero > div, .list-villain > div{

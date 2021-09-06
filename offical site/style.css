@@ -1,0 +1,102 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+#header, #main, #footer{
+    grid-column: 1 / span 12;
+    width: 100%;
+}
+.listHero{
+    width:100%;
+}
+.listHero .row > div:last-child{
+    background-color:#202020;
+    height:100vh;
+}
+.search-bar{
+    width:100%;
+    display:flex;
+    background-color:#e62429;
+    height:10vh;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.searchHero{
+    width: 60%;
+    height:5vh;
+    border: none;
+    border-right: 2px solid black;
+    font-size: 1.2em;
+}
+.checkType{
+    width: 20%;
+    height:5vh;
+    border:none;
+    font-size: 1.2em;
+}
+
+.list-hero, .list-villain{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    background-color: white;
+    height:80vh;
+    margin-top: 5vh;
+    
+}
+.list-hero::-webkit-scrollbar,  .list-villain::-webkit-scrollbar{
+    width: 14px;
+    position:relative;
+}
+
+.list-hero::-webkit-scrollbar-track, .list-villain::-webkit-scrollbar-track{
+    background:#e62429;
+}
+.list-hero::-webkit-scrollbar-thumb, .list-villain::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+.list-hero > div, .list-villain > div{
+    width:10vw;
+    margin: 20px 1em 20px 0;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0 , 100% 95% , 90% 100%, 0 100%);
+}
+.list-hero > div:hover, .list-villain > div:hover{
+    border:2px solid black;
+}
+.list-hero p, .list-villain p{
+    font-size: 0.8em;
+    padding: 3px 3px 3px 0;
+    color:white;
+    font-weight: bold;
+}
+.list-hero img,  .list-villain img{
+    width:100%;
+    border-bottom: 4px solid #e62429 ;
+}
+
+@media only screen and (min-width: 50em) and (max-width: 64em){
+    .list-hero > div, .list-villain > div{
+        width:15vw;
+    }
+}
+@media only screen and (min-width: 30em) and (max-width: 50em) {
+    .list-hero > div, .list-villain > div{
+        width: 30vh;
+    }
+    .list-hero, .list-villain{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 30em) {
+    .list-hero > div,  .list-villain > div{
+        width:20vh;
+    }
+    .list-hero,  .list-villain{
+        height: 45vh;
+    }
+}

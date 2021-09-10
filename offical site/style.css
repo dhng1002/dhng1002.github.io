@@ -44,9 +44,10 @@
     overflow-y: scroll;
     background-color: white;
     height:450px;
-    padding-top: 5vh;
-    border-bottom:2px solid black;
+    padding-top:0;
+    position: relative;
 }
+
 .list-hero::-webkit-scrollbar,  .list-villain::-webkit-scrollbar{
     width: 8px;
     
@@ -89,7 +90,7 @@
 }
 .info-hero h1{
     color:#e62429;
-    font-size: 1.4em;
+
 }
 .info-hero h2{
     color: white;
@@ -121,17 +122,133 @@
 }
 
 
+/* Danh sach phim  */
+
+.background-timeline{
+    width: 100%;
+    background: url('image/universe-1.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.logo{
+    position: relative;
+    flex: 0 0 20vw;
+    margin: 0 calc((100vw / 3 - 20vw) / 2); 
+    display:flex;
+    align-items: center;
+    height:116px ;  
+}
+.timeline-top > .logo::after{
+    content:"";
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 97% 100%, 97% 2%, 0 2%);
+    width:30px;
+    height:50px;
+    position:absolute;
+    top:116px;
+    right: 0;
+}
+.timeline-bot > .logo::after{
+    content:"";
+    background-color: white;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 98%, 97% 98%, 97% 0%);
+    width:30px;
+    height:50px;
+    position:absolute;
+    bottom:100px;
+    right: 0;
+}
+.summary {
+   display:none;
+   position: absolute;
+   width: 50px;height: 50px;
+   background-color: black;
+   right:-60px; 
+ }
+img{
+   width: 100%;
+   height: auto;
+}
+
+.timeline-top{
+    align-items: center;
+    display:flex;
+    justify-content: flex-start;
+    width: calc((13 * 100vw) / 3)
+}
+
+.timeline-line{
+   position: absolute;
+   width: 100%;
+   border-top: 0.5px solid rgba(255, 255, 255, 0.616);
+   border-bottom: 0.5px solid rgba(255, 255, 255, 0.76); 
+   background-color: rgba(0, 0, 0, 0.61);
+   height:20px;
+   top:240px;
+}
+.timeline-bot{
+   display: flex;
+   align-items: center;
+
+   justify-content: flex-start;
+   width: calc((13 * 100vw) / 3);
+   padding-left:calc((100vw / 2 - 20vw) / 2) ;
+}
+
+.timeline-title{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:#202020;
+   height:150px;
+   font-size: 50px;
+   font-family: 'Roboto', sans-serif;
+}
+.timeline-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: scroll;
+}
+
 @media only screen and (min-width: 50em) and (max-width: 64em){
     .list-hero > div, .list-villain > div{
         width:15vw;
+    }
+    .information blockquote{
+        font-size: 2.2vw;
+    }
+    .information td{
+        font-size: 2vw;
+    }
+    .information a{
+        font-size: 1.5em;
     }
 }
 @media only screen and (min-width: 30em) and (max-width: 50em) {
     .list-hero > div, .list-villain > div{
         width: 30vh;
     }
+    .info-hero h1{
+        text-align:center;
+    }
     .list-hero, .list-villain{
         height: 60vh;
+    }
+    .information blockquote{
+        font-size: 3.5vw;
+    }
+    .information td{
+        font-size: 3vw;
+    }
+    .information a{
+        font-size: 1em;
     }
 }
 @media only screen and (max-width: 30em) {
@@ -140,5 +257,14 @@
     }
     .list-hero,  .list-villain{
         height: 45vh;
+    }
+    .information blockquote{
+        font-size: 3.7vw;
+    }
+    .information td{
+        font-size: 3vw;
+    }
+    .information a{
+        font-size: 1.5em;
     }
 }

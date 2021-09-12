@@ -492,6 +492,8 @@
     }
     .list-hero, .list-villain{
         height: 60vh;
+        margin-bottom: 15px;
+        border-bottom: 1px solid black;
     }
     .information blockquote{
         font-size: 3.5vw;

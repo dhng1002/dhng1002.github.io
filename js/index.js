@@ -8,8 +8,16 @@ disableRightClick.addEventListener('contextmenu', disableContextmenu =>{
 })
 
 // tạo intro
+let maxWidth = document.querySelector('body').offsetWidth;
+window.addEventListener('resize', screenWidth);
+function screenWidth(){
+    document.querySelector('body').offsetWidth;
+    // console.log(document.querySelector('body').offsetWidth)
+}
+
 startIntro.addEventListener("click", myFunction);
 function myFunction(){
+    if(maxWidth > 1024){
     document.querySelector('.intro-content').style.animationName = "hidding"
     setTimeout(introStart, 1500);
     function introStart(){
@@ -19,5 +27,20 @@ function myFunction(){
     function currentPage(){
     window.open("offical site/index.html", "_self");
     }
+    }
+    }
+    if (maxWidth < 1024){
+        document.querySelector('.intro-content').style.animationName = "hidding"
+        setTimeout(currentPage, 1500);
+        function currentPage(){
+            window.open("offical site/index.html", "_self");
+        }
+    }
+    if (maxWidth < 800){
+        document.querySelector('.intro-content').style.animationName = "hiddingForMB"
+        setTimeout(currentPage, 1500);
+        function currentPage(){
+            window.open("offical site/index.html", "_self");
+        }
     }
 }

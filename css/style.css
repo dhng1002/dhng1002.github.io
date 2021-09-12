@@ -61,3 +61,25 @@ video{
     80%{clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 100%);background-color: black;}
     100%{clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 100%);background-color: black;}
 }
+@keyframes hiddingForMB {
+    0% {background: url("https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg"); background-size: cover;}
+    15%{background: white;}
+    80%{background: black;}
+    100%{background: black;}
+}
+
+@media only screen and (min-width: 50em) and (max-width: 64em) {
+    .intro-content h1{
+        font-size: 1.8em;
+    }
+    .intro-content button{
+        width:150px;
+    }
+}
+@media only screen and (max-width: 50em){
+    .intro-content{
+        clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 100%);
+        background:url("https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg");
+        background-size: cover;
+    }
+}

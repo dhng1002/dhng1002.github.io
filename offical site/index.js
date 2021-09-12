@@ -725,6 +725,15 @@ function hidebox(){
         document.querySelector('.choose').style.display = "none"
     }
 }
+document.querySelector('.changeBackground  button').addEventListener( 'click', black)
+function black(){
+    document.getElementById("footer").style.animationName = `black`;
+    document.querySelector('.listHero .row > div:last-child').style.animationName = `black`;
+    document.querySelector('.timeline-title').style.animationName = `black`;
+    document.getElementById("header").style.animationName=`black`;
+    document.querySelector('.info-hero h1').style.color = `#e62429`
+}
+
 
 
 document.querySelectorAll('.liststone > img')[0].addEventListener('click', yellow)
@@ -732,25 +741,29 @@ function yellow(){
     document.getElementById("footer").style.animationName = `yellow`;
     document.querySelector('.listHero .row > div:last-child').style.animationName = `yellow`;
     document.querySelector('.timeline-title').style.animationName = `yellow`;
+    document.getElementById("header").style.animationName=`yellow`;
 }
 document.querySelectorAll('.liststone > img')[1].addEventListener('click', green)
 function green(){
     document.getElementById("footer").style.animationName = `green`;
     document.querySelector('.listHero .row > div:last-child').style.animationName = `green`;
     document.querySelector('.timeline-title').style.animationName = `green`;
+    document.getElementById("header").style.animationName=`green`;
 }
 document.querySelectorAll('.liststone > img')[2].addEventListener('click', purpile)
 function purpile(){
     document.getElementById("footer").style.animationName = `purpile`;
     document.querySelector('.listHero .row > div:last-child').style.animationName = `purpile`;
     document.querySelector('.timeline-title').style.animationName = `purpile`;
+    document.getElementById("header").style.animationName=`purpile`;
 }
 document.querySelectorAll('.liststone > img')[3].addEventListener('click', red)
 function red(){
     document.getElementById("footer").style.animationName = `red`;
     document.querySelector('.listHero .row > div:last-child').style.animationName = `red`;
     document.querySelector('.timeline-title').style.animationName = `red`;
-    document.querySelector('.info-hero h1').style.color = `white`
+    document.querySelector('.info-hero h1').style.color = `white`;
+    document.getElementById("header").style.animationName=`red`;
 }
 document.querySelectorAll('.liststone > img')[4].addEventListener('click', orange)
 function orange(){
@@ -758,10 +771,14 @@ function orange(){
     document.querySelector('.listHero .row > div:last-child').style.animationName = `orange`;
     document.querySelector('.timeline-title').style.animationName = `orange`;
     document.querySelector('.info-hero h1').style.color = `white`
+    document.getElementById("header").style.animationName=`orange`;
 }
 document.querySelectorAll('.liststone > img')[5].addEventListener('click', blue)
 function blue(){
     document.getElementById("footer").style.animationName = `blue`;
     document.querySelector('.listHero .row > div:last-child').style.animationName = `blue`;
     document.querySelector('.timeline-title').style.animationName = `blue`;
+    document.getElementById("header").style.animationName=`blue`;
 }
+
+

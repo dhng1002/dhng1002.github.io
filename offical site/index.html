@@ -12,9 +12,27 @@
     <title>MARVEL</title>
 </head>
 <body class="layout">
+    <div id="header">
+        <div class="container-fluid">
+          <div class="row"> 
+                <div class="col-4 md-12 mb-12 marvel-logo1">
+                    <div class="marvel-logo2"><img src="image/marvel-logo.png"></div>
+                </div>
+                <div class="col-8 md-12 mb-12">
+                    <div class="menu-bar">
+                        <a href="#introduce" >  Introduce  </a>
+                            <a href="#newMovie" >   New Movies </a>
+                        <a href="#timeline" >   Time Line   </a>
+                            <a href="#listHero">  List Hero   </a>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
     <div class="changeBackground">
         <img src="image/tesseract-logo.png" >
         <div class="choose">
+            <button> Reverse </button>
             <p>VẬT PHẨM THU THẬP ĐƯỢC</p>
             <div class="liststone">
                 <img src="image/mindstone-logo.png">
@@ -26,22 +44,20 @@
             </div>
         </div>
     </div>
-    <div id="header">
-    </div>
     <div id="main">
-        <div class="introduce container">
+        <div class="introduce container" id="introduce">
             <div class="content">
                 <div class="introduce-background">
                     <div class="introduce-content">
-                        <h3>WELCOME TO THE MARVEL'S UNIVERSE</>
+                        <h3>WELCOME TO THE MARVEL'S UNIVERSE</h3>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="newMovie container">
+        <div class="newMovie container" id="newMovie">
             <div class="listMovie container-fluid">
                 <div class = "row">
-                    <div class="col-12"><h1>NEW MOVIE TRAILER</h1></div>
+                    <div class="col-12"><h1>NEW MOVIES TRAILER</h1></div>
                     <div class="col-3 md-6 mb-12">
                         <div class="newMovie-background"><img src="https://i.ytimg.com/vi/jSnc8Mt_EEI/maxresdefault.jpg"></div>
                         <div class="newMovie-title">Huyền Thoại Thập Luân Trailer</div>
@@ -77,7 +93,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeline container">
+        <div class="timeline container" id="timeline">
             <div class="background-timeline">
                 <div class="background2">
                     <div class="background3">
@@ -86,11 +102,14 @@
                 </div>
                 <div class="timeline-content">
                     <div class="timeline-top">
-                    <div class="logo "> <div class="summary " name="captain">
+                    <div class="logo "> 
+                        <div class="summary " name="captain">
                         <p>Năm 1942, Steve Rogers là một người gầy nhỏ, bạn thân của anh là Bucky. Do thể chất của mình, Rogers bị từ chối tham gia vào quân đội Thế chiến II nhưng vẫn anh kiên trì. Tiến sĩ Abraham Erskine, người đứng đầu chương trình Siêu chiến binh, tình cờ nghe được Rogers và cho rằng anh là một ứng cử viên phù hợp. Rogers cuối cùng đã được chọn cho chương trình và trở nên cao lớn, cơ bắp, siêu khỏe, nhanh nhẹn,... .Trước đó một thời gian, một sĩ quan Đức Quốc xã, Johann Schmidt (cũng là một đặc nhiệm Hydra), đã trải qua một phiên bản không hoàn hảo của chương trình Super Soldier.
                         <br>Schmidt có được trong tay khối Tesseract. Ông ta dự định khai thác sức mạnh của nó để chế tạo vũ khí và phá hủy toàn bộ nước Mỹ. Rogers bây giờ được gọi là Captain America. Kỹ sư trưởng, Howard Stark (cha của Tony Stark), đưa cho anh một chiếc khiên Vibranium.</br>
                         <br>Trong một nhiệm vụ chống Hydra trên một chuyến tàu, Bucky đã rơi xuống khỏi tàu. Cap lên máy bay của Red Skull. Trong quá trình của cuộc đụng độ, Red Skull chạm vào khối Tesseract, thứ mở ra một lỗ sâu và hút ông ta vào. Khối Tesseract rơi xuống đại dương, và Captain America hy sinh bản thân bằng cách đâm máy bay xuống Bắc Cực và bị đóng băng trong 70 năm.</br></p>
-                    </div> <img src="image/captain1-logo.png" alt=""></div>
+                        </div> 
+                        <img src="image/captain1-logo.png" alt="">
+                    </div>
                     <div class="logo "> <div class="summary "name="ironman1">
                         <p>Tony Stark cuối cùng thừa kế công ty của cha mình. Trong những năm qua, Stark Industries đã sản xuất và cung cấp vũ khí trên khắp thế giới. Obadiah Stane, một nhân viên cấp cao của công ty, đã buôn bán trái phép vũ khí. Trong một lần biểu diễn tên lửa Jerico của Tony, anh đã bị bọn khủng bố bắt giữ.</br>
                         <br> Trong quá trình này, Tony bị thương ở ngực bởi các mảnh đạn từ vụ nổ. Trong hang động, nơi Tony bị giam giữ, là một người khác bị giam giữ, Tiến sĩ Yinsen, người đã cấy một nam châm điện vào ngực của Tony để giữ các mảnh vỡ ra khỏi trái tim của anh ta.</br>
@@ -247,7 +266,7 @@
            </div> 
             <div class="timeline-title"><i>TIMELINE</i></div>
         </div>
-        <div class="listHero container-fluid">
+        <div class="listHero container-fluid" id="listHero">
             <div class = "row">
                 <div class="col-12">
                     <div class="content">

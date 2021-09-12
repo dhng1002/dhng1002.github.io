@@ -529,7 +529,7 @@ var listFilm= [
     <br>Vật phẩm thu được: </br>
     <br> Space Stone </br>
     <br> Mind Stone </br>
-    <div class="booty"> <img src="image/spacestone-logo.png"> <img src="mindstone-logo.png"> </div>`},
+    <div class="booty"> <img src="image/spacestone-logo.png"></div>`},
 
    {name:"thor2",
     title:`<p>Khi vũ trụ chìm trong bóng tối, một chủng tộc gọi là Dark Elves đã thống trị. Sau đó, ánh sáng đến, và họ mất đi sức mạnh của mình. Malekith, kẻ thống trị của Dark Elves, muốn sử dụng Aether (Viên đá Thực tại) và ném thế giới trở lại bóng tối. Bây giờ, có một sự kiện gắn kết tất cả chín cõi lại với nhau cứ sau 5000 năm. Nó được gọi là Hội tụ. Malekith cố gắng sử dụng Aether để làm đen tối thế giới trong lần hội tụ trước đó, nhưng bị ông ngoại của Thor ngăn cản.</br>
@@ -538,7 +538,7 @@ var listFilm= [
     <br>Thor đưa Jane đến Asgard, Malekith tấn công Asgard để lấy Jane, mẹ của Thor chết để bảo vệ Jane, Loki hợp lực với Thor để trả thù cho mẹ mình, Loki lừa Malekith bằng cách đưa Thor và Jane làm tù nhân của mình, Malekith trích xuất Aether từ Jane, Loki chết (không, không phải, Loki đang giả mạo một lần nữa, cuối cùng thì anh ta sẽ quay lại), Thor và Malekith chiến đấu qua các cổng khác nhau, Thor cuối cùng cũng giết được Malekith. Cuối cùng, Loki giả dạng Odin và cai trị Asgard. Odin thực sự ở trên Trái đất, chúng ta sẽ đến điều đó ở Ragnarok.</p>
     <br>Vật phẩm thu được: </br>
     <br> Reality Stone </br>
-    <div class="booty"> <img src="image/realitystone-logo.png"></div>`},
+    <div class="booty"> <img src="image/REALITYSTONE-logo.png"></div>`},
 
     {name:"galaxy1",
     title:`<p>Bộ phim này giới thiệu cho chúng ta một loạt các nhân vật mới. Peter Quill - một nửa người, nửa người ngoài hành tinh được Yondu nuôi dưỡng. Gamora và Nebula, con gái nuôi của Thanos (họ không ưa nhau). Rocket Raccoon, một chú gấu trúc biết nói, là một kỹ thuật viên và kỹ sư sắc bén. Groot, một sinh vật cây mạnh mẽ có từ vựng bao gồm "Tôi là Groot". Groot và Rocket là những thợ săn tiền thưởng. Drax, một sinh vật quyền năng có gia đình bị giết bởi Ronan và Thanos.</br>
@@ -641,7 +641,7 @@ var listFilm= [
     <br>Tại Wakanda, Black Panther và những người bạn, Bucky, Captain America, Rhodes, Natasha, Bruce, Falcon và Wanda chiến đấu chống lại tay sai của Thanos. Shuri cố gắng tách Viên đá Tâm trí khỏi Vision nhưng không thể. Groot, Rocket và Thor (với chiếc rìu mới) đến Wakanda để giúp đỡ. Thanos cuối cùng cũng đến và đánh bại mọi người. Wanda phá hủy Viên đá Tâm trí và giết Vision. Nhưng Thanos sử dụng Viên đá Thời gian để đảo ngược thời gian và xé Viên đá Tâm trí ra khỏi Vision. Thor tiến đến hạ chiếc rìu của mình vào ngực Thanos, nhưng Thanos đã búng những ngón tay gầy guộc của anh ta. Như đã hứa, một nửa dân số của vũ trụ sẽ bị giết ngay lập tức.</p>
     <br>Vật phẩm thu được: 
      Infinity Gauntlet 
-    <div class="booty"> <img src="image/infinitygauntlet-logo.png"></div>`},
+    <div class="booty"><img src="image/soulstone.png"> <img src="image/infinitygauntlet-logo.png"></div>`},
 
     {name:"avengers4",
     title:`<p>Avengers: Endgame bắt đầu ngay sau các sự kiện của Avengers: Infinity War. Các Avengers còn lại tìm thấy Thanos chỉ để nhận ra rằng anh ta đã phá hủy những viên đá. Thor giết anh ta. 5 năm sau, Scott, người bị mắc kẹt trong lĩnh vực lượng tử, bị hất tung vì một con chuột rình mò xung quanh xe tải. Trong khi đó chỉ là một vài giây đối với anh ấy, 5 năm trôi qua cho phần còn lại. Scott đề xuất ý tưởng du hành thời gian.</br>
@@ -650,43 +650,118 @@ var listFilm= [
     <br>Sau đó, Steve tiếp tục hành trình để đưa các Viên đá Vô cực trở lại đúng dòng thời gian của chúng và cuối cùng thực hiện một cuộc hành trình về quá khứ để tạo ra một dòng thời gian cuối cùng. Tại đây, anh sống cả đời hạnh phúc với Peggy và trở lại như một ông già để trao chiếc khiên của mình cho The Falcon.</p>
     <br>Vật phẩm thu được: 
      Infinity Gauntlet Ironman 
-    <div class="booty"> <img src="image/infinitygauntlet2-logo.png"><img src="thanos-head-logo.png"></div>`},
+    <div class="booty"> <img src="image/infinitygauntlet2-logo.png"></div>`},
 
+    {name:"blackwidow",
+    title:`Không có thông tin`},
+
+    {name:`shangchi`,
+    title:`Không có thông tin`}
 ]
 
 var logos = document.querySelectorAll('.logo')
+var createE= document.createElement("div")
 
+document.querySelector('.background3').appendChild(createE)
 
 logos.forEach((logo) => {
 logo.addEventListener('click',appearSummary)
 function appearSummary(){
     document.querySelector('.background2').style.display='flex'
-
     for (let asd = 0; asd < listFilm.length; asd++) {
         if (this.querySelector('.summary').getAttribute('name')==listFilm[asd].name) {
             
             document.querySelector('.background3 div').innerHTML=listFilm[asd].title
             
+        }
     }
- 
-        console.log(listFilm[asd].name)
+    if(document.querySelector('.booty') !== null){
+    document.querySelector('.booty img').addEventListener("click", activebox);
+    function activebox(){
+        if(this.getAttribute('src') == `image/tesseract-logo.png`)
+        document.querySelector('.changeBackground').style.display = 'block'
+        if(document.querySelector('.changeBackground').style.display == 'block'){
+        if(this.getAttribute('src') == `image/mindstone-logo.png`){
+            document.querySelectorAll('.liststone > img')[0].style.display = "inline-block"
+            document.querySelector('.choose').style.display = "block"
+        }
+        if(this.getAttribute('src') == `image/timestone-logo.png`){
+            document.querySelectorAll('.liststone > img')[1].style.display = "inline-block"
+            document.querySelector('.choose').style.display = "block"
+        }
+        if(this.getAttribute('src') == `image/powerstone-logo.png`){
+            document.querySelectorAll('.liststone > img')[2].style.display = "inline-block"
+            document.querySelector('.choose').style.display = "block"
+        }
+        if(this.getAttribute('src') == `image/REALITYSTONE-logo.png`){
+            document.querySelectorAll('.liststone > img')[3].style.display = "inline-block"
+            document.querySelector('.choose').style.display = "block"
+        }
+        if(this.getAttribute('src') == `image/soulstone.png`){
+            document.querySelectorAll('.liststone > img')[4].style.display = "inline-block"
+            document.querySelector('.choose').style.display = "block"
+        }
+        if(this.getAttribute('src') == `image/spacestone-logo.png`){
+            document.querySelectorAll('.liststone > img')[5].style.display = "inline-block"
+            document.querySelector('.choose').style.display = "block"
+        }
+    }
+        
+    }
 }
 }
-
 })
+
 document.querySelector('.background3 button').addEventListener('click',hiddenSummary)
 function hiddenSummary(){
 document.querySelector('.background2').style.display='none'
 }
+document.querySelector('.choose').style.display = "none";
+document.querySelector('.changeBackground > img').addEventListener('click', hidebox)
+function hidebox(){
+    if(document.querySelector('.choose').style.display == "none"){
+    document.querySelector('.choose').style.display = "block"
+    }else{
+        document.querySelector('.choose').style.display = "none"
+    }
+}
 
 
-
-
-var createE= document.createElement("div")
-
-document.querySelector('.background3').appendChild(createE)
-
-console.log(document.querySelector('.summary').getAttribute('name'))
-
-
-
+document.querySelectorAll('.liststone > img')[0].addEventListener('click', yellow)
+function yellow(){
+    document.getElementById("footer").style.animationName = `yellow`;
+    document.querySelector('.listHero .row > div:last-child').style.animationName = `yellow`;
+    document.querySelector('.timeline-title').style.animationName = `yellow`;
+}
+document.querySelectorAll('.liststone > img')[1].addEventListener('click', green)
+function green(){
+    document.getElementById("footer").style.animationName = `green`;
+    document.querySelector('.listHero .row > div:last-child').style.animationName = `green`;
+    document.querySelector('.timeline-title').style.animationName = `green`;
+}
+document.querySelectorAll('.liststone > img')[2].addEventListener('click', purpile)
+function purpile(){
+    document.getElementById("footer").style.animationName = `purpile`;
+    document.querySelector('.listHero .row > div:last-child').style.animationName = `purpile`;
+    document.querySelector('.timeline-title').style.animationName = `purpile`;
+}
+document.querySelectorAll('.liststone > img')[3].addEventListener('click', red)
+function red(){
+    document.getElementById("footer").style.animationName = `red`;
+    document.querySelector('.listHero .row > div:last-child').style.animationName = `red`;
+    document.querySelector('.timeline-title').style.animationName = `red`;
+    document.querySelector('.info-hero h1').style.color = `white`
+}
+document.querySelectorAll('.liststone > img')[4].addEventListener('click', orange)
+function orange(){
+    document.getElementById("footer").style.animationName = `orange`;
+    document.querySelector('.listHero .row > div:last-child').style.animationName = `orange`;
+    document.querySelector('.timeline-title').style.animationName = `orange`;
+    document.querySelector('.info-hero h1').style.color = `white`
+}
+document.querySelectorAll('.liststone > img')[5].addEventListener('click', blue)
+function blue(){
+    document.getElementById("footer").style.animationName = `blue`;
+    document.querySelector('.listHero .row > div:last-child').style.animationName = `blue`;
+    document.querySelector('.timeline-title').style.animationName = `blue`;
+}

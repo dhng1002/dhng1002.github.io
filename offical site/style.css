@@ -2,6 +2,7 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
 #header, #main, #footer{
     grid-column: 1 / span 12;
     width: 100%;
@@ -11,7 +12,48 @@
     background-color: #202020;
     border-top: 5px solid #e62429;
     padding: 100px 0;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
+.changeBackground{
+    position:fixed;
+    right:0;
+    top:20vh;
+    z-index:3;
+    display: none;
+}
+.changeBackground img{
+    width:50px;
+    opacity:0.7;
+}
+.choose{
+    position:absolute;
+    width:300px;
+    height:150px;
+    right:0;
+    background-color: white;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    text-align:center;
+    font-weight:bold;
+    display: none;
+}
+.liststone > img{
+    width:40px;
+    display: none;
+}
+::-webkit-scrollbar{
+    width:8px;
+}
+::-webkit-scrollbar-track{
+    width: 6px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+::-webkit-scrollbar-thumb{
+    background-color:#e6242bfd;
+
+}
+
 .introduce > .content{
     height:100vh;
     width:100%;
@@ -69,6 +111,8 @@
 .listHero .row > div:last-child{
     background-color:#202020;
     height:528px;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 .search-bar{
     width:100%;
@@ -280,8 +324,8 @@
     height: auto;
  }
  .booty img{
-     width: 70px;
-     height: 100px;
+     width: 100px;
+     height: auto;
  }
  .booty{
      width: 100%;
@@ -324,7 +368,9 @@
    font-family: 'Roboto', sans-serif;
    letter-spacing: 10px;
    font-weight: bold;
-   clip-path: polygon(0 0, 100% 0 , 100% 80%, 90% 100%, 10% 100%, 0 80%)
+   clip-path: polygon(0 0, 100% 0 , 100% 80%, 90% 100%, 10% 100%, 0 80%);
+   animation-duration: 5s;
+   animation-fill-mode: forwards;
 }
 .timeline-content{
     width: 100%;
@@ -456,6 +502,14 @@
     .information a{
         font-size: 1em;
     }
+    .introduce-content{
+        clip-path: polygon(0 0, 100% 0, 100% 100% , 0 100% );
+        width:100%
+    }
+    .timeline-title{
+        clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 100% );
+        font-size: 1.2em;
+    }
 }
 @media only screen and (max-width: 30em) {
     .list-hero > div,  .list-villain > div{
@@ -472,5 +526,32 @@
     }
     .information a{
         font-size: 1.5em;
+
     }
+    .introduce-content{
+        clip-path: polygon(0 0, 100% 0, 100% 100% , 0 100% );
+        width:100%
+    }
+    .timeline-title{
+        clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 100% );
+        font-size: 1.2em;
+    }
+}
+@keyframes yellow {
+    100%{background: linear-gradient(90deg, rgb(142, 180, 3), rgb(196, 196, 3))}
+}
+@keyframes green {
+    100%{background: linear-gradient(90deg, rgb(5, 204, 95), rgb(33, 204, 118))}
+}
+@keyframes purpile {
+    100%{background: linear-gradient(90deg, rgb(121, 11, 224), rgb(172, 16, 211))}
+}
+@keyframes red {
+    100%{background: linear-gradient(90deg, rgb(216, 13, 63), rgb(224, 11, 39))}
+}
+@keyframes orange {
+    100%{background: linear-gradient(90deg, rgb(202, 69, 7), rgb(228, 152, 10))}
+}
+@keyframes blue {
+    100%{background: linear-gradient(90deg, rgb(9, 186, 218), rgb(21, 107, 219))}
 }
